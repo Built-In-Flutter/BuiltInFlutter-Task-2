@@ -21,10 +21,10 @@ Mandatory Widgets for Task Evaluation:
 5. Column or Row
 6. Image or Circle avatar
 7. Divider (This widget might be new to you, try googling around or mention your difficulties in the #help channel)
-#### "After all googling is also a tech skill😜"
+#### After all googling is also a tech skill😜
 
 
-Make sure that you include these 6 Widgets in your Project.
+### "Make sure that you include these 7 Widgets in your Project."
 
 Finally create a Pull Request to the Parent Repository and Mention your PR Link with your submission.
 
