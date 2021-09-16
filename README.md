@@ -20,7 +20,8 @@ Mandatory Widgets for Task Evaluation:
 4. Text
 5. Column or Row
 6. Image or Circle avatar
-7. Divider (This widget may be new to you, try googling or mention your difficulties in the #help channel. After all googling is also a tech skill😜)
+7. Divider (This widget might be new to you, try googling around or mention your difficulties in the #help channel)
+#### "After all googling is also a tech skill😜"
 
 
 Make sure that you include these 6 Widgets in your Project.
