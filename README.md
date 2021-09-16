@@ -12,7 +12,7 @@ Finally create a Pull Request to the Parent Repository and Mention your PR Link 
 
 :checkered_flag: After completing the task you have mention that you have completed task-2 along with your GitHub profile and PR Link on the ***#its-show-time*** channel and tag **@moderators**. Otherwise your work won't be recognised.
 
-##### Deadline : 14th September 6.00 PM
+##### Deadline : 20th September 6.00 PM
 
 :round_pushpin: *Please ensure that you are using your original profile pic and original name as the server nickname. Otherwise it won't be evaluated.*
 
