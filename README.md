@@ -10,8 +10,17 @@ Create an attractive single screen portfolio with Flutter,
 Use AppBar, Images from Assets, Container, Text, Column.
 Fork this repository and push your codes to a seperate folder with your name within the forked version of the below repository. *The folder name should be your name*.
 
-
+## EXAMPLE
 ![Whatsapp-Automation](https://media.discordapp.net/attachments/885514375589412934/888085857704243230/IMG-20210916-WA0119.jpg?width=336&height=644)
+
+Mandatory Widgets for Task Evaluation:
+1. Scaffold
+2. AppBar
+3. Container
+4. Text
+5. Column or Row
+6. Image or Circle avatar
+Make sure that you include these 6 Widgets in your Project.
 
 Finally create a Pull Request to the Parent Repository and Mention your PR Link with your submission.
 
