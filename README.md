@@ -6,7 +6,9 @@ Ever heard of a Mobile Portfolio?, Well we are gonna make one. :)
 
 This task makes you flaunt your creative nerves as well as output an awesome Mobile Portfolio which will come handy in your future.
 
-Create an attractive single screen portfolio with Flutter, Fork this repository and push your codes to a seperate folder with your name within the forked version of the below repository. *The folder name should be your name*.
+Create an attractive single screen portfolio with Flutter,
+Use AppBar, Images from Assets, Container, Text, Column.
+Fork this repository and push your codes to a seperate folder with your name within the forked version of the below repository. *The folder name should be your name*.
 
 Finally create a Pull Request to the Parent Repository and Mention your PR Link with your submission.
 
