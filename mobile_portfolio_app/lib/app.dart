@@ -28,7 +28,7 @@ class App extends StatelessWidget {
           ),
         ),
         body: Layout(),
-        backgroundColor: Colors.black,
+        backgroundColor: Colors.indigo[900],
       ),
     );
   }
