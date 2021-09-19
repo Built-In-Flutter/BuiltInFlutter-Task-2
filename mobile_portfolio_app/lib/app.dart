@@ -16,19 +16,17 @@ class App extends StatelessWidget {
               fontWeight: FontWeight.bold,
             ),
           ),
-          backgroundColor: Colors.grey[100],
+          backgroundColor: Colors.yellowAccent[400],
           elevation: 10,
           centerTitle: true,
           leading: IconButton(
-            onPressed: () {
-              print("menu clicked");
-            },
-            icon: Icon(Icons.menu),
+            onPressed: () {},
+            icon: Icon(Icons.person),
             color: Colors.indigo[900],
           ),
         ),
         body: Layout(),
-        backgroundColor: Colors.indigo[900],
+        backgroundColor: Colors.white,
       ),
     );
   }

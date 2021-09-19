@@ -7,15 +7,15 @@ class Layout extends StatelessWidget {
   Widget build(BuildContext context) {
     return Center(
       child: Container(
-        width: MediaQuery.of(context).size.width * 0.75,
-        height: MediaQuery.of(context).size.height * 0.75,
-        padding: EdgeInsets.all(30),
+        width: MediaQuery.of(context).size.width * 0.8,
+        height: MediaQuery.of(context).size.height * 0.8,
+        padding: EdgeInsets.all(10),
         decoration: BoxDecoration(
-          color: Colors.greenAccent[400],
+          color: Colors.yellowAccent[200],
           borderRadius: BorderRadius.circular(10),
           boxShadow: [
             BoxShadow(
-              color: Colors.green,
+              color: Colors.indigo,
               blurRadius: 10.0,
               spreadRadius: 1.0,
             ),
@@ -24,10 +24,11 @@ class Layout extends StatelessWidget {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           children: <Widget>[
+            //First column item
             Container(
-              width: 300,
-              height: 200,
-              padding: EdgeInsets.all(20),
+              width: 280,
+              height: 180,
+              padding: EdgeInsets.all(10),
               decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(10),
                 color: Colors.indigo[900],
@@ -43,15 +44,15 @@ class Layout extends StatelessWidget {
                 children: <Widget>[
                   CircleAvatar(
                     backgroundColor: Colors.grey[100],
-                    radius: 50,
+                    radius: 30,
                     foregroundImage: NetworkImage(
                       "/assets/images/pofilepic.webp",
                     ),
                   ),
                   Divider(
                     thickness: 0,
-                    color: Colors.greenAccent[400],
-                    height: 20,
+                    color: Colors.indigo[900],
+                    height: 15,
                   ),
                   Text(
                     "Muhammad Thabsheer N P",
@@ -59,53 +60,116 @@ class Layout extends StatelessWidget {
                       fontFamily: "Poppins",
                       fontWeight: FontWeight.w600,
                       color: Colors.grey[100],
-                      fontSize: 17,
+                      fontSize: 16,
                     ),
+                  ),
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: <Widget>[
+                      Icon(
+                        Icons.mail,
+                        color: Colors.yellowAccent[200],
+                      ),
+                      Text(
+                        "thabsheeron@gmail.com",
+                        style: TextStyle(
+                          fontFamily: "Poppins",
+                          fontWeight: FontWeight.w400,
+                          color: Colors.grey[100],
+                          fontSize: 13,
+                        ),
+                      ),
+                    ],
                   ),
                 ],
               ),
-              // decoration: BoxDecoration(
-              //   // color: Colors.grey[100],
-              //   border: Border(
-              //     bottom: BorderSide(
-              //       color: Colors.grey.shade100,
-              //       width: 2,
-              //     ),
-              //   ),
-              // ),
             ),
             Divider(
-              height: 30,
+              height: 20,
               thickness: 0,
-              color: Colors.greenAccent[400],
+              color: Colors.yellowAccent[400],
             ),
+            //second column item
             Container(
               width: 300,
-              height: 100,
+              height: 75,
               child: Center(
-                child: ListTile(
-                  leading: Icon(Icons.message),
-                  title: Text("LinkedIn"),
+                child: Row(
+                  children: <Widget>[
+                    Image(
+                      image: NetworkImage("/assets/images/linkedin.png"),
+                      width: 50,
+                      height: 50,
+                    ),
+                    Text(
+                      "@Muhammad Thabsheer N P",
+                      style: TextStyle(
+                        fontFamily: "Poppins",
+                        fontWeight: FontWeight.w400,
+                        color: Colors.indigo[900],
+                      ),
+                    ),
+                  ],
                 ),
               ),
             ),
             Divider(
-              height: 10,
+              height: 5,
               thickness: 0,
               color: Colors.indigo,
             ),
+            //third column item
             Container(
               width: 300,
-              height: 100,
+              height: 75,
+              child: Center(
+                child: Row(
+                  children: <Widget>[
+                    Image(
+                      image: NetworkImage("/assets/images/github.png"),
+                      width: 50,
+                      height: 50,
+                    ),
+                    Text(
+                      "@MThabsheer7",
+                      style: TextStyle(
+                        fontFamily: "Poppins",
+                        fontWeight: FontWeight.w400,
+                        color: Colors.indigo[900],
+                      ),
+                    ),
+                  ],
+                ),
+              ),
             ),
             Divider(
-              height: 10,
+              height: 5,
               thickness: 0,
               color: Colors.indigo,
             ),
+            //fourth column
             Container(
               width: 300,
-              height: 100,
+              height: 75,
+              child: Center(
+                child: Row(
+                  children: <Widget>[
+                    Image(
+                      image: NetworkImage("/assets/images/discord.png"),
+                      width: 50,
+                      height: 50,
+                    ),
+                    Text(
+                      "@Thabshie#8296",
+                      style: TextStyle(
+                        fontFamily: "Poppins",
+                        fontWeight: FontWeight.w400,
+                        color: Colors.indigo[900],
+                      ),
+                    ),
+                  ],
+                ),
+              ),
             ),
           ],
         ),
