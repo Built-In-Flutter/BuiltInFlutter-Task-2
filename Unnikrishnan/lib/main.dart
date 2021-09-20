@@ -9,21 +9,27 @@ void main() {
 }
 
 class MyApp extends StatelessWidget {
+
+  // links to my social media accounts
   static const String _instagram = 'https://instagram.com/___unnikrishnan___';
   static const String _github = 'https://github.com/UnnikrishnanNP';
   static const String _linkedin ='https://www.linkedin.com/in/unnikrishnan-n-p/';
   static const String _twitter ='https://www.twitter.com/UnnikrishnanNP5';
 
+  // this function launches all the links
   void _launchURL(String url) async =>
       await canLaunch(url) ? await launch(url) : throw 'Could not launch $url';
 
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      // 1 : Scaffold
       home: Scaffold(
+        // 2 : Appbar
         appBar: AppBar(
           backgroundColor: Colors.blueGrey.shade600,
           title: Center(
+            // 3 : Text
             child: Text(
               'Unnikrishnan N P',
               style: TextStyle(
@@ -36,10 +42,12 @@ class MyApp extends StatelessWidget {
         ),
         backgroundColor: Colors.blueGrey.shade600,
         body: SafeArea(
+          // 4 : Column
           child: Column(
             children: <Widget>[
               Padding(
                 padding: const EdgeInsets.all(30.0),
+                // 5 :Circle Avatar
                 child: CircleAvatar(
                   radius: 50,
                   backgroundImage: AssetImage('images/pp.jpg'),
@@ -56,6 +64,7 @@ class MyApp extends StatelessWidget {
               SizedBox(
                 height: 10,
                 width: 150,
+                // 6 : Divider
                 child: Divider(
                   color: Colors.grey.shade300,
                 ),
@@ -122,6 +131,7 @@ class MyApp extends StatelessWidget {
               Expanded(
                 child: SizedBox(),
               ),
+              // 7 : Container
               Container(
                 padding: EdgeInsets.all(10.0),
                 child: Row(
