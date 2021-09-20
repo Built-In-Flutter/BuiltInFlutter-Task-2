@@ -1,0 +1,35 @@
+name: task_2
+description: A new Flutter project.
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.1.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  cupertino_icons: ^0.1.2
+  url_launcher: ^6.0.11
+  font_awesome_flutter: ^9.1.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  
+
+
+flutter:
+  uses-material-design: true
+  assets:
+    - images/pp.jpg
+
+  fonts:
+    - family: SourceSansPro
+      fonts:
+        - asset: fonts/SourceSansPro-Black.ttf
+
+    - family: Inconsolata
+      fonts:
+        - asset: fonts/Inconsolata.ttf
