@@ -6,6 +6,7 @@ import 'sections/bioSection.dart';
 import 'sections/skillSection.dart';
 
 class Home extends StatelessWidget {
+  // Added divider
   Widget Thicc({required double thick}) {
     return Divider(
       thickness: thick,
