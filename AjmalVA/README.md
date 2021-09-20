@@ -1,10 +1,10 @@
-# ajmal
+# ajmal/portfolio
 
-A new Flutter project.
+My Flutter Portfolio ptoject.
 
-## Getting Started
+## ScreenShot
 
-This project is a starting point for a Flutter application.
+![Whatsapp-Automation](https://i.imgur.com/haVNvzf.png?width=336&height=644)
 
 A few resources to get you started if this is your first Flutter project:
 
