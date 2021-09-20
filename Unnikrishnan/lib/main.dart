@@ -1,25 +1,21 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:url_launcher/url_launcher.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+
 
 void main() {
   runApp(MyApp());
 }
 
 class MyApp extends StatelessWidget {
-  Future<void> _launched;
-  String instaId = 'https://instagram.com/___unnikrishnan___';
+  static const String _instagram = 'https://instagram.com/___unnikrishnan___';
+  static const String _github = 'https://github.com/UnnikrishnanNP';
+  static const String _linkedin ='https://www.linkedin.com/in/unnikrishnan-n-p/';
+  static const String _twitter ='https://www.twitter.com/UnnikrishnanNP5';
 
-  Future<void> _launchInApp(String url) async {
-    if (await canLaunch(url)) {
-      await launch(url,
-          forceSafariVC: true,
-          forceWebView: true,
-          headers: <String, String>{'header_key': 'header_value'});
-    } else {
-      throw 'Could not launch $url';
-    }
-  }
+  void _launchURL(String url) async =>
+      await canLaunch(url) ? await launch(url) : throw 'Could not launch $url';
 
   @override
   Widget build(BuildContext context) {
@@ -65,20 +61,21 @@ class MyApp extends StatelessWidget {
                 ),
               ),
               Card(
-                  margin: EdgeInsets.symmetric(vertical: 10, horizontal: 10),
-                  color: Colors.blueGrey.shade50,
-                  child: ListTile(
-                    leading: Icon(
-                      Icons.location_on,
-                      color: Colors.blueGrey.shade500,
-                    ),
-                    title: Text(
-                      'Kozhikode, Kerala, India',
-                      style: TextStyle(
-                          color: Colors.blueGrey.shade600,
-                          fontFamily: 'SourceSansPro'),
-                    ),
-                  )),
+                margin: EdgeInsets.symmetric(vertical: 10, horizontal: 10),
+                color: Colors.blueGrey.shade50,
+                child: ListTile(
+                  leading: Icon(
+                    Icons.location_on,
+                    color: Colors.blueGrey.shade500,
+                  ),
+                  title: Text(
+                    'Kozhikode, Kerala, India',
+                    style: TextStyle(
+                        color: Colors.blueGrey.shade600,
+                        fontFamily: 'SourceSansPro'),
+                  ),
+                ),
+              ),
               Card(
                 margin: EdgeInsets.symmetric(vertical: 10, horizontal: 10),
                 color: Colors.blueGrey.shade50,
@@ -122,14 +119,40 @@ class MyApp extends StatelessWidget {
                     ),
                     textAlign: TextAlign.justify),
               ),
+              Expanded(
+                child: SizedBox(),
+              ),
               Container(
-                child: Center(
-                    child: ElevatedButton(
-                  child: const Text('Instagram'),
-                  onPressed: () {
-                    _launchInApp(instaId);
-                  },
-                )),
+                padding: EdgeInsets.all(10.0),
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                  children: <Widget>[
+                    IconButton(
+                      icon: FaIcon(FontAwesomeIcons.github),
+                      onPressed: () {
+                        _launchURL(_github);
+                      },
+                    ),
+                    IconButton(
+                      icon: FaIcon(FontAwesomeIcons.linkedin),
+                      onPressed: () {
+                        _launchURL(_linkedin);
+                      },
+                    ),
+                    IconButton(
+                      icon: FaIcon(FontAwesomeIcons.instagram),
+                      onPressed: () {
+                        _launchURL(_instagram);
+                      },
+                    ),
+                    IconButton(
+                      icon: FaIcon(FontAwesomeIcons.twitter),
+                      onPressed: () {
+                        _launchURL(_twitter);
+                      },
+                    ),
+                  ],
+                ),
               )
             ],
           ),
