@@ -1,5 +1,9 @@
 ## Built In Flutter Task 2
 
+## ScreenShots
+<img src="https://user-images.githubusercontent.com/54467684/134182833-3dac0363-16ed-49d7-b981-98d56b44f30f.png" width="336" height="644">
+<img src="https://user-images.githubusercontent.com/54467684/134187664-567735a0-18cf-487c-b14b-5f4e1d5ff31c.png" width="336" height="644">
+
 #### Part 1 | Flutter PortFolio
 
 Ever heard of a Mobile Portfolio?, Well we are gonna make one. :)
