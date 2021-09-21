@@ -1,37 +1,28 @@
-## Built In Flutter Task 2
+![App Brewery Banner](https://github.com/londonappbrewery/Images/blob/master/AppBreweryBanner.png)
 
-#### Part 1 | Flutter PortFolio
+# Mi Card
 
-Ever heard of a Mobile Portfolio?, Well we are gonna make one. :)
+## Our Goal
 
-This task makes you flaunt your creative nerves as well as output an awesome Mobile Portfolio which will come handy in your future.
+Now that you've seen how to create a Flutter app entirely from scratch, we're going to go further and learn more about how to design user interfaces for Flutter apps.
 
-Create an attractive single screen portfolio with Flutter,
-Use AppBar, Images from Assets, Container, Text, Column.
-Fork this repository and push your codes and a screenshot of your portfolio to a seperate folder with your name within the forked version of the below repository. *The folder name should be your name*.
+## What you will create
 
-## EXAMPLE
-![Whatsapp-Automation](https://media.discordapp.net/attachments/885514375589412934/888085857704243230/IMG-20210916-WA0119.jpg?width=336&height=644)
+Mi Card is a personal business card. Imagine every time you wanted to give someone your contact details or your business card but you didn't have it on you. Well, now you can get them to download your business card as an app.
 
-Mandatory Widgets for Task Evaluation:
-1. Scaffold
-2. AppBar
-3. Container
-4. Text
-5. Column or Row
-6. Image or Circle avatar
-7. Divider (This widget might be new to you, try googling around or mention your difficulties in the #help channel)
-#### After all googling is also a tech skill😜
+## What you will learn
+
+* How to create Stateless Widgets
+* What is the difference between hot reload and hot refresh and running an app from cold
+* How to use Containers to lay out your UI
+* How to use Columns and Rows to position your UI elements
+* How to add custom fonts
+* How to add Material icons
+* How to style Text widgets
+* How to read and use Flutter Documentation
 
 
-### "Make sure that you include these 7 Widgets in your Project."
 
-Finally create a Pull Request to the Parent Repository and Mention your PR Link with your submission.
+>This is a companion project to The App Brewery's Complete Flutter Development Bootcamp, check out the full course at [www.appbrewery.co](https://www.appbrewery.co/)
 
-:checkered_flag: After completing the task you have to mention that you have completed task-2 along with your GitHub profile and PR Link on the ***#its-show-time*** channel and tag **@Mentor**. Otherwise your work won't be recognised.
-
-##### Deadline : 20th September 6.00 PM
-
-:round_pushpin: *Please ensure that you are using your original profile pic and original name as the server nickname. Otherwise it won't be evaluated.*
-
-Happy Coding.
+![End Banner](https://github.com/londonappbrewery/Images/blob/master/readme-end-banner.png)
