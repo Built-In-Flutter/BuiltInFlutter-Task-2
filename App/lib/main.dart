@@ -233,15 +233,15 @@ class NinjaCard extends StatelessWidget {
         onPressed:(){
             ScaffoldMessenger.of(context).showSnackBar(
               SnackBar(
-                padding: EdgeInsets.all(5.0),
+                padding: EdgeInsets.all(11.0),
                 content: Text(
                   "Will get back to you soon!",
                   style: TextStyle(
-                    fontSize: 18.0,
+                    fontSize: 25.0,
 
                   ),
                   ),
-                backgroundColor: Colors.blueGrey[700],
+                backgroundColor: Colors.yellow[700],
                 ),
               );
             },
