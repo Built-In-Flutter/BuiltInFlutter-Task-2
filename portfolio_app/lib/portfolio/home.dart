@@ -1,9 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:portfolio_app/sections/contactSection.dart';
-import 'package:portfolio_app/sections/profileSection.dart';
-import 'package:portfolio_app/sections/workSection.dart';
+import 'package:portfolio_app/news/screens/newsHome.dart';
 import 'sections/bioSection.dart';
+import 'sections/contactSection.dart';
+import 'sections/profileSection.dart';
 import 'sections/skillSection.dart';
+import 'sections/workSection.dart';
 
 class Home extends StatelessWidget {
   // Added divider
@@ -28,6 +29,20 @@ class Home extends StatelessWidget {
             ),
           ),
           backgroundColor: Colors.white,
+          actions: [
+            TextButton(
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => NewsHome()),
+                );
+              },
+              child: Text(
+                'News App',
+                style: Theme.of(context).textTheme.headline4,
+              ),
+            ),
+          ],
         ),
         body: ListView(
           children: [

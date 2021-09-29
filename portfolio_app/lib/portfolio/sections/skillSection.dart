@@ -1,6 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:portfolio_app/sections/adobeIcons.dart';
+import 'package:portfolio_app/portfolio/sections/adobeIcons.dart';
 
 class SkillSection extends StatelessWidget {
   const SkillSection({Key? key}) : super(key: key);

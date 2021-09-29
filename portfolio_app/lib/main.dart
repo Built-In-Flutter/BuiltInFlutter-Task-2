@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:portfolio_app/home.dart';
+
+import 'news/screens/newsHome.dart';
+import 'portfolio/home.dart';
 
 void main() {
-  runApp(Home());
+  runApp(NewsHome());
 }
