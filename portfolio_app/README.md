@@ -2,4 +2,4 @@
 
 The UI preview :
 
-![](https://gyazo.com/eb5c5741b6a9a16c692170a41a49c858.png | width=100)
+<img src="https://github.com/joseph-mj/BuiltInFlutter-Task-2/blob/main/Portfolio%20Screenshot.png?raw=true" alt="alt text" width=200px >
