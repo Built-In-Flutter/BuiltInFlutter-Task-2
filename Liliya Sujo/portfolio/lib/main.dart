@@ -1,210 +1,384 @@
 import 'package:flutter/material.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-void main() {
-  runApp(const MyApp());
-}
+void main() => runApp(MyApp());
 
 class MyApp extends StatelessWidget {
-  const MyApp({Key? key}) : super(key: key);
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: 'Profile App',
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
-      ),
-      home: MyHomePage(),
-    );
-  }
-}
-
-class MyHomePage extends StatefulWidget {
-  @override
-  State<MyHomePage> createState() => _MyHomePageState();
-}
-
-class _MyHomePageState extends State<MyHomePage> {
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        centerTitle: true,
-        title: Text(
-          "PROFILE",
-          style: TextStyle(
-            color: Colors.black,
-            fontSize: 30,
-            fontWeight: FontWeight.w700,
-          ),
-        ),
-        leading: IconButton(
-          icon: Icon(Icons.arrow_back_rounded),
-          onPressed: () {},
-          color: Colors.black,
-        ),
-        elevation: 0,
-        backgroundColor: Colors.white,
-      ),
-      body: Container(
-        height: 700,
-        width: double.infinity,
-        color: Colors.white,
-        padding: EdgeInsets.all(25),
-        child: Column(
-          children: [
-            Container(
-              color: Colors.white,
-              child: Column(
-                children: [
-                  SizedBox(
-                    height: 10,
-                  ),
-                  CircleAvatar(
-                    backgroundImage: AssetImage('assets/40_Liliya Sujo1.jpg'),
-                    radius: 80,
-                  ),
-                ],
+      home: Scaffold(
+          extendBodyBehindAppBar: true,
+          appBar: AppBar(
+            elevation: 0,
+            backgroundColor: Colors.blue,
+            title: Text(
+              'Profile',
+              style: GoogleFonts.roboto(
+                fontWeight: FontWeight.w400,
+                fontSize: 22,
               ),
             ),
-            Spacer(),
-            Row(
+            centerTitle: true,
+            leading: IconButton(
+              icon: Icon(Icons.arrow_back),
+              onPressed: () {},
+            ),
+            actions: [
+              IconButton(
+                icon: Icon(Icons.settings),
+                onPressed: () {},
+                padding: EdgeInsets.only(right: 20.0),
+              ),
+            ],
+          ),
+          body: SafeArea(
+              child: SingleChildScrollView(
+            child: Column(
               children: [
-                Text('Name :',
-                    style: GoogleFonts.josefinSans(
-                        textStyle: TextStyle(
-                      fontSize: 20,
-                      fontWeight: FontWeight.w500,
-                      color: Colors.black,
-                    ))),
-                Spacer(),
-                Text(
-                  'Liliya Sujo',
-                  style: GoogleFonts.josefinSans(
-                      textStyle: TextStyle(
-                    fontSize: 20,
-                    fontWeight: FontWeight.w500,
-                    color: Colors.black,
-                  )),
+                Container(
+                  decoration: BoxDecoration(
+                    borderRadius: BorderRadius.only(
+                      bottomRight: Radius.circular(30.0),
+                      bottomLeft: const Radius.circular(30.0),
+                    ),
+                    color: Colors.blue,
+                  ),
+                  height: 380,
+                  padding: EdgeInsets.all(25),
+                  child: Center(
+                    child: Column(
+                      children: [
+                        Container(
+                          height: 140,
+                          width: 140,
+                          margin: EdgeInsets.only(top: 40.0),
+                          decoration: BoxDecoration(
+                            border: Border.all(
+                              color: Colors.white,
+                              width: 5.0,
+                            ),
+                            shape: BoxShape.circle,
+                            image: DecorationImage(
+                              image: AssetImage('assets/40_Liliya Sujo1.jpg'),
+                              fit: BoxFit.cover,
+                            ),
+                          ),
+                        ),
+                        Container(
+                          margin: EdgeInsets.only(
+                            top: 12.0,
+                          ),
+                          child: Text(
+                            "Liliya Sujo",
+                            style: GoogleFonts.comfortaa(
+                              fontSize: 18.0,
+                              color: Colors.white,
+                            ),
+                          ),
+                        ),
+                        Container(
+                          margin: EdgeInsets.only(
+                            top: 12.0,
+                          ),
+                          child: Text(
+                            "Flutter Developer",
+                            style: GoogleFonts.rubik(
+                              fontSize: 13.0,
+                              fontWeight: FontWeight.w100,
+                              letterSpacing: 1,
+                              color: Colors.white70,
+                            ),
+                          ),
+                        ),
+                        Container(
+                          margin: EdgeInsets.only(top: 20),
+                          width: 263,
+                          child: Row(
+                            children: [
+                              Container(
+                                child: Column(
+                                  children: [
+                                    RichText(
+                                      text: TextSpan(
+                                        children: [
+                                          TextSpan(
+                                            text: '1000 ',
+                                            style: TextStyle(
+                                              fontSize: 18.0,
+                                              color: Colors.white,
+                                            ),
+                                          ),
+                                          TextSpan(
+                                            text: 'Followers',
+                                            style: TextStyle(
+                                              fontSize: 13.0,
+                                              color: Colors.white70,
+                                            ),
+                                          ),
+                                        ],
+                                      ),
+                                    ),
+                                  ],
+                                ),
+                              ),
+                              Container(
+                                margin: EdgeInsets.only(left: 30),
+                                height: 60,
+                                width: 1,
+                                color: Colors.grey[400],
+                              ),
+                              Container(
+                                margin: EdgeInsets.only(left: 30),
+                                child: Column(
+                                  children: [
+                                    RichText(
+                                      text: TextSpan(
+                                        children: [
+                                          TextSpan(
+                                            text: '1200 ',
+                                            style: TextStyle(
+                                              fontSize: 18.0,
+                                              color: Colors.white,
+                                            ),
+                                          ),
+                                          TextSpan(
+                                            text: 'Following',
+                                            style: TextStyle(
+                                              fontSize: 13.0,
+                                              color: Colors.white70,
+                                            ),
+                                          ),
+                                        ],
+                                      ),
+                                    ),
+                                  ],
+                                ),
+                              ),
+                            ],
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                ),
+                Container(
+                  padding: EdgeInsets.all(30),
+                  child: Column(
+                    children: [
+                      Column(
+                        children: [
+                          Container(
+                            child: Column(
+                              children: [
+                                Container(
+                                  child: Row(
+                                    children: [
+                                      Container(
+                                        child: Icon(
+                                          Icons.email,
+                                          color: Colors.grey,
+                                        ),
+                                      ),
+                                      Container(
+                                        margin: EdgeInsets.only(left: 10),
+                                        child: Text(
+                                          'Email',
+                                          style: TextStyle(
+                                            color: Colors.grey,
+                                          ),
+                                        ),
+                                      ),
+                                    ],
+                                  ),
+                                ),
+                                Container(
+                                  margin: EdgeInsets.only(left: 35, top: 10),
+                                  alignment: Alignment.centerLeft,
+                                  child: Text(
+                                    'liliyasujo@gmail.com',
+                                    style: TextStyle(
+                                      fontSize: 15,
+                                    ),
+                                  ),
+                                ),
+                              ],
+                            ),
+                          ),
+                          Divider(
+                            thickness: 0.9,
+                            height: 28,
+                          ),
+                          Container(
+                            child: Column(
+                              children: [
+                                Container(
+                                  child: Row(
+                                    children: [
+                                      Container(
+                                        child: Icon(
+                                          Icons.mobile_friendly,
+                                          color: Colors.grey,
+                                        ),
+                                      ),
+                                      Container(
+                                        margin: EdgeInsets.only(left: 10),
+                                        child: Text(
+                                          'Mobile',
+                                          style: TextStyle(
+                                            color: Colors.grey,
+                                          ),
+                                        ),
+                                      ),
+                                    ],
+                                  ),
+                                ),
+                                Container(
+                                  margin: EdgeInsets.only(left: 35, top: 10),
+                                  alignment: Alignment.centerLeft,
+                                  child: Text(
+                                    '1234567890',
+                                    style: TextStyle(
+                                      fontSize: 15,
+                                    ),
+                                  ),
+                                ),
+                              ],
+                            ),
+                          ),
+                          Divider(
+                            thickness: 0.9,
+                            height: 28,
+                          ),
+                          Container(
+                            child: Column(
+                              children: [
+                                Container(
+                                  child: Row(
+                                    children: [
+                                      Container(
+                                        child: Icon(
+                                          Icons.facebook,
+                                          color: Colors.grey,
+                                        ),
+                                      ),
+                                      Container(
+                                        margin: EdgeInsets.only(left: 10),
+                                        child: Text(
+                                          'Facebook',
+                                          style: TextStyle(
+                                            color: Colors.grey,
+                                          ),
+                                        ),
+                                      ),
+                                    ],
+                                  ),
+                                ),
+                                Container(
+                                  margin: EdgeInsets.only(left: 35, top: 10),
+                                  alignment: Alignment.centerLeft,
+                                  child: Text(
+                                    'Liliya Sujo',
+                                    style: TextStyle(
+                                      fontSize: 15,
+                                    ),
+                                  ),
+                                ),
+                              ],
+                            ),
+                          ),
+                          Divider(
+                            thickness: 0.9,
+                            height: 28,
+                          ),
+                          Container(
+                            child: Column(
+                              children: [
+                                Container(
+                                  child: Row(
+                                    children: [
+                                      Container(
+                                        child: Icon(
+                                          FontAwesomeIcons.github,
+                                          color: Colors.grey,
+                                        ),
+                                      ),
+                                      Container(
+                                        margin: EdgeInsets.only(left: 10),
+                                        child: Text(
+                                          'Github',
+                                          style: TextStyle(
+                                            color: Colors.grey,
+                                          ),
+                                        ),
+                                      ),
+                                    ],
+                                  ),
+                                ),
+                                Container(
+                                  margin: EdgeInsets.only(left: 35, top: 10),
+                                  alignment: Alignment.centerLeft,
+                                  child: Text(
+                                    'liliyasujo',
+                                    style: TextStyle(
+                                      fontSize: 15,
+                                    ),
+                                  ),
+                                ),
+                              ],
+                            ),
+                          ),
+                          Divider(
+                            thickness: 0.9,
+                            height: 28,
+                          ),
+                          Container(
+                            child: Column(
+                              children: [
+                                Container(
+                                  child: Row(
+                                    children: [
+                                      Container(
+                                        child: Icon(
+                                          FontAwesomeIcons.discord,
+                                          color: Colors.grey,
+                                        ),
+                                      ),
+                                      Container(
+                                        margin: EdgeInsets.only(left: 10),
+                                        child: Text(
+                                          'Discord',
+                                          style: TextStyle(
+                                            color: Colors.grey,
+                                          ),
+                                        ),
+                                      ),
+                                    ],
+                                  ),
+                                ),
+                                Container(
+                                  margin: EdgeInsets.only(left: 35, top: 10),
+                                  alignment: Alignment.centerLeft,
+                                  child: Text(
+                                    'Liliya Sujo#1258',
+                                    style: TextStyle(
+                                      fontSize: 15,
+                                    ),
+                                  ),
+                                ),
+                              ],
+                            ),
+                          ),
+                        ],
+                      ),
+                    ],
+                  ),
                 ),
               ],
             ),
-            Divider(
-              thickness: 2,
-            ),
-            Spacer(),
-            Row(
-              children: [
-                Text(
-                  'Email :',
-                  style: GoogleFonts.josefinSans(
-                      textStyle: TextStyle(
-                    fontSize: 20,
-                    fontWeight: FontWeight.w500,
-                    color: Colors.black,
-                  )),
-                ),
-                Spacer(),
-                Text(
-                  'liliyasujo@gmail.com',
-                  style: GoogleFonts.josefinSans(
-                      textStyle: TextStyle(
-                    fontSize: 20,
-                    fontWeight: FontWeight.w500,
-                    color: Colors.black,
-                  )),
-                ),
-              ],
-            ),
-            Divider(
-              thickness: 2,
-            ),
-            Spacer(),
-            Row(
-              children: [
-                Text(
-                  'Phone number :',
-                  style: GoogleFonts.josefinSans(
-                      textStyle: TextStyle(
-                    fontSize: 20,
-                    fontWeight: FontWeight.w500,
-                    color: Colors.black,
-                  )),
-                ),
-                Spacer(),
-                Text(
-                  '70XX XXXX 01',
-                  style: GoogleFonts.josefinSans(
-                      textStyle: TextStyle(
-                    fontSize: 20,
-                    fontWeight: FontWeight.w500,
-                    color: Colors.black,
-                  )),
-                ),
-              ],
-            ),
-            Divider(
-              thickness: 2,
-            ),
-            Spacer(),
-            Row(
-              children: [
-                Text(
-                  'DOB',
-                  style: GoogleFonts.josefinSans(
-                      textStyle: TextStyle(
-                    fontSize: 20,
-                    fontWeight: FontWeight.w500,
-                    color: Colors.black,
-                  )),
-                ),
-                Spacer(),
-                Text(
-                  '28/01/2001',
-                  style: GoogleFonts.josefinSans(
-                      textStyle: TextStyle(
-                    fontSize: 20,
-                    fontWeight: FontWeight.w500,
-                    color: Colors.black,
-                  )),
-                ),
-              ],
-            ),
-            Divider(
-              thickness: 2,
-            ),
-            Spacer(),
-            Row(
-              children: [
-                Text(
-                  'Address :',
-                  style: GoogleFonts.josefinSans(
-                      textStyle: TextStyle(
-                    fontSize: 20,
-                    fontWeight: FontWeight.w500,
-                    color: Colors.black,
-                  )),
-                ),
-                Spacer(),
-                Text(
-                  'Konikkara H, Cherpu',
-                  style: GoogleFonts.josefinSans(
-                      textStyle: TextStyle(
-                    fontSize: 20,
-                    fontWeight: FontWeight.w500,
-                    color: Colors.black,
-                  )),
-                ),
-              ],
-            ),
-            Divider(
-              thickness: 2,
-            ),
-            Spacer(),
-          ],
-        ),
-      ),
+          ))),
     );
   }
 }
